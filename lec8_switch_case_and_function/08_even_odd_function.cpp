@@ -20,7 +20,7 @@ int main()
     }
     else
     {
-        cout<<" it is not even ";
+        cout<<" it is not even";
     }
 
 }
