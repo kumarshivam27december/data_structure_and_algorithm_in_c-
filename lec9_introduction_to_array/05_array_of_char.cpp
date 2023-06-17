@@ -6,12 +6,9 @@ void printArray(char arr[],int size)
     {
         cout<<arr[i]<<" ";
     }
-
-
 }
 int main()
 {
     char ch[5]={'a','s','d','f','g'};
     printArray(ch,5);
-
 }
