@@ -3,7 +3,7 @@ using namespace std;
 //in the arr[] below  you should never put a value 
 void printArray(int arr[], int size)
 {
-    // cout<<"printing the array"<<endl;
+    
     // print the array
     for(int i=0;i<size;i++)
     {
@@ -26,5 +26,18 @@ int main()
     cout<<"printing fifth array "<<endl;
     printArray(fifth,10);
     cout<<"\nEverything is fine"<<endl;
+
+    int thirdsize=sizeof(third)/sizeof(int);
+    cout<<"size of fifth is "<<thirdsize<<endl;
+
+
+
+    int fifthsize=sizeof(fifth)/sizeof(int);
+    cout<<"size of fifth is "<<fifthsize<<endl;
+
+
+
+
+
 
 }
