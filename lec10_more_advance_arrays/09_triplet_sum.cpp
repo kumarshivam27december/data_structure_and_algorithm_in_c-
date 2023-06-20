@@ -1,11 +1,11 @@
 #include <iostream>
-
+using namespace std;
 void findTripletSum(int arr[], int size, int target) {
     for (int i = 0; i < size - 2; i++) {
         for (int j = i + 1; j < size - 1; j++) {
             for (int k = j + 1; k < size; k++) {
                 if (arr[i] + arr[j] + arr[k] == target) {
-                    std::cout << "Triplet found: " << arr[i] << " + " << arr[j] << " + " << arr[k] << " = " << target << std::endl;
+                    cout << "Triplet found: " << arr[i] << " + " << arr[j] << " + " << arr[k] << " = " << target << std::endl;
                 }
             }
         }
