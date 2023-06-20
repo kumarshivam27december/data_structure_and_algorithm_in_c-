@@ -18,7 +18,7 @@ void findDublicate(int arr[],int n)
 int main()
 {
  
-    int array[5]={11,12,13,14,13};
+    int array[5]={11,12,13,14,11};
     findDublicate(array,5);
 
 }
