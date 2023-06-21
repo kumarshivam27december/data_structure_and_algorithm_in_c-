@@ -18,7 +18,6 @@ int main()
 {
     
     int arr[100]={1,2,35,4,-9,8,34,};
-
     // int arr[size] wrong method
     maxArray(arr,7);
 
