@@ -5,7 +5,7 @@ void findTripletSum(int arr[], int size, int target) {
         for (int j = i + 1; j < size - 1; j++) {
             for (int k = j + 1; k < size; k++) {
                 if (arr[i] + arr[j] + arr[k] == target) {
-                    cout << "Triplet found: " << arr[i] << " + " << arr[j] << " + " << arr[k] << " = " << target << std::endl;
+                    cout << "Triplet found: " << arr[i] << " + " << arr[j] << " + " << arr[k] << " = " << target << endl;
                 }
             }
         }
