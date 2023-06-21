@@ -14,7 +14,7 @@ void find_nondublicate(int arr[],int n)
 int main()
 {
  
-    int array[5]={11,22,11,22,32};
+    int array[5]={11,22,21,22,11};
     find_nondublicate(array,5);
 
 }
