@@ -6,7 +6,7 @@ int firstOccurence(int arr[],int n,int key)
     int e =n-1;
     int mid = s + (e-s)/2 ;
     int ans = -1;
-    while(s<e)
+    while(s<=e)
     {
         if(arr[mid]==key)
         {
@@ -37,7 +37,7 @@ int lastOccurence(int arr[],int n,int key)
     int e = n-1;
     int mid = s + (e-s)/2;
     int ans = -1;
-    while (s<e)
+    while (s<=e)
     {
         if(arr[mid]==key)
         {
@@ -68,7 +68,7 @@ int lastOccurence(int arr[],int n,int key)
 int main()
 {
     int arr[8] = {1,2,3,5,5,5,9,88};
-    int key =  5;
+    int key =  2;
     int firstindex = firstOccurence(arr,8,key);
     cout<<firstindex<<endl;
     int lastindex = lastOccurence(arr,8,key);

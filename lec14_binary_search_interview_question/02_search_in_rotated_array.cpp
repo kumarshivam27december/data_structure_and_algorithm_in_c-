@@ -50,7 +50,7 @@ int binarySearch(int arr[],int start,int end,int k)
 }
 int answer(int arr[],int n,int key)
 {
-int pivot  = getpivot(arr,7);
+    int pivot  = getpivot(arr,7);
     if(key>=arr[pivot]&&key<=arr[n-1])
     {
         return  binarySearch(arr,pivot,n-1,key);
