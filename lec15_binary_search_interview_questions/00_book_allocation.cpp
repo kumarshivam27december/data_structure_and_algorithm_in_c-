@@ -56,7 +56,7 @@ int allocateBooks(int arr[], int n, int m) {
 }
 
 int main() {
-    int arr[] = {10,20,30,40};
+    int arr[] = {12, 34, 67, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
     int m = 2;
 
