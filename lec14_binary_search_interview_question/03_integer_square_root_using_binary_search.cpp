@@ -28,7 +28,7 @@ long long int binarySearch(int n)
     }
     return ans;
 }
-int sqrt(int n)
+int mySqrt(int n)
 {
     return binarySearch(n);
 }
@@ -37,6 +37,6 @@ int main()
 {
  int  n;
  cin>>n;
- int ans = sqrt(n);
+ int ans = mySqrt(n);
  cout<<ans<<endl;   
 } 

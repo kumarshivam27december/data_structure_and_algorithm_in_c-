@@ -24,7 +24,7 @@ long long int sqrtInteger(int n)
             e=mid-1;
         }
         
-       mid = s + (e-s)/2; /* code */
+       mid = s + (e-s)/2;
     }
     return ans;
 }   
