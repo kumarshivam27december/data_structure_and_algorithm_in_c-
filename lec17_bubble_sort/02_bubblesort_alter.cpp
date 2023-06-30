@@ -11,7 +11,7 @@ void bubblesort(int arr[],int size)
 {
     for(int i=1;i<size;i++)
     {
-        for(int j = 0;j<size-i-1;j++)
+        for(int j = 0;j<size-i;j++)
         {
            if(arr[j]>arr[j+1])
            {
