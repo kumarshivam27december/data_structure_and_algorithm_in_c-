@@ -7,7 +7,8 @@ int getpivot(int arr[],int n)
     int  mid = s + (e-s)/2;
     while (s<e)
     {
-        if(arr[mid]>arr[0])
+        //if(arr[mid]>arr[0])    // this will not pass on test case arr[1] = {1}  , target = 1;
+        if(arr[mid]>arr[n-1])
         {
             s = mid +1;  
         }
@@ -63,7 +64,7 @@ int answer(int arr[],int n,int key)
 }
 int main()
 {
-    int arr[7] = {5,6,8,9,2,3,4};
+    int arr[1] = {1};
     int key ;
     cin>>key;
    int finalise = answer(arr,7,key);
