@@ -9,14 +9,21 @@ void printArray(int arr[],int n)
 }
 void bubblesort(int arr[],int size)
 {
-    for(int i=0;i<size;i++)
+    for(int i=1;i<size;i++)
     {
-        for(int j = 0;j<size-1;j++)
+        bool swapped  = false;
+        for(int j = 0;j<size-i;j++)
         {
            if(arr[j]>arr[j+1])
            {
             swap(arr[j],arr[j+1]);
            }
+
+           swapped = true;
+        }
+        if(swapped==false)
+        {
+            break;// in this case time complexity is O(n) rather than O(n*n)
         }
 
     }
