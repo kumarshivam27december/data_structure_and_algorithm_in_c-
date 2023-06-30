@@ -6,11 +6,10 @@ void printarray(int arr[],int n)
 {
     cout<<arr[i]<<" ";
 }
-
 }
 void insertionsort(int arr[],int n)
 {
-    for(int i = 0;i<n;i++)// this denotes the round
+    for(int i = 1;i<n;i++)// this denotes the round
     {
        int temp = arr[i];
        int j = i-1;
@@ -24,18 +23,13 @@ void insertionsort(int arr[],int n)
         else{
             break;
         }
-
        }
-       arr[j+1] = temp;
-
+       arr[j+1] = temp;// because we have came out of the loop after doing j-- hence we will store the value of temp in it.
     }
-
-
-
 }
 int main()
 {
-    int arr[7] = {10,1,7,4,8,2,11};
+    int arr[5] = {9,7,1,4,3};
     int size  = sizeof(arr)/sizeof(arr[0]);
     insertionsort(arr,size);
     printarray(arr,size);
