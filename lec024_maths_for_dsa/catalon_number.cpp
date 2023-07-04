@@ -9,6 +9,7 @@ int fact(int n)
     }
     return ans;
 }
+
 int findcatalon(int n)
 {
     int num =  fact(2*n);
