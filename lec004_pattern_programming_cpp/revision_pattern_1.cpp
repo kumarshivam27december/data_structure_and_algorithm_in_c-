@@ -12,14 +12,21 @@ int main()
 {
     int n=4;
     int i=1;
-    while(i<n)
+    while(i<=n)
     {
-        int space = i-1;
-        while(space)
+        int space = 1;
+        while(space<i)
         {
-            cout<<" ";
-            space--;
+            cout<<" "<<" ";
+            space++;
         }
-        int j = 
+        int j = 1;
+        while(j<=n-i+1)
+        {
+            cout<<"*"<<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
     }
 }
