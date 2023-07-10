@@ -16,4 +16,5 @@ int main()
     cout<<"sum is "<<getsum(arr+3,3)<<endl;
     // the pointer is used instead of arr[] this is because we can give whatever the size we want to add like if we want to add start from 3 element then we can just give like getsum(arr+3,size of arr) 
     return 0;
+    
 }
