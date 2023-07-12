@@ -40,7 +40,7 @@ int main()
 
     for(int i=0;i<row;i++)
     {
-        delete []arr[row];
+        delete []arr[i];
     }
 
     delete []arr;
