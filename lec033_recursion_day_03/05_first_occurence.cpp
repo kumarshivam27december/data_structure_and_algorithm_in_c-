@@ -32,7 +32,7 @@ int firstOccurence(int arr[],int start,int end,int key)
         return firstOccurence(arr,mid+1,end,key);
     }
 
-    return mid;
+    return 0;
     
 }
 int main()
