@@ -21,16 +21,16 @@ private:
     }
 
 public:
-    vector<string> letterCombination(string digit) {
+    vector<string> letterCombinations(string digits) {
         vector<string> ans;
-        if (digit.length() == 0) {
+        if (digits.length() == 0) {
             return ans;
         }
 
         string output;
         int index = 0;
         string mapping[10] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        solve(digit, output, index, ans, mapping);
+        solve(digits, output, index, ans, mapping);
         return ans;
     }
 };
@@ -39,7 +39,7 @@ int main() {
     Solution solution;
     string digits = "79"; // Example input
 
-    vector<string> result = solution.letterCombination(digits);
+    vector<string> result = solution.letterCombinations(digits);
 
     // Output the combinations
     for (const string& combination : result) {
