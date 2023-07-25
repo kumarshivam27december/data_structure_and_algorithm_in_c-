@@ -2,6 +2,7 @@
     "files.associations": {
         ".env*": "dotenv",
         "iostream": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "vector": "cpp"
     }
 }
