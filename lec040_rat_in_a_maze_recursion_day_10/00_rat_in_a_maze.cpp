@@ -98,10 +98,10 @@ int main()
 {
     Solution sol;
     vector<vector<int>> m = {
-        {1, 0, 1, 0},
-        {1, 1, 1, 1},
-        {0, 1, 1, 0},
-        {1, 1, 1, 1}
+        {1, 0, 0, 0},
+        {1, 1, 0, 1},
+        {1, 1, 0, 0},
+        {0, 1, 1, 1}
     };
     int n = m.size();
     vector<string> paths = sol.findpath(m, n);
