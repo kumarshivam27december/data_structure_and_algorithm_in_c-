@@ -13,12 +13,12 @@ int binarySearch(int  arr[], int n, int key)
 			cout<<mid<<endl;
 			
 		}
-		else if(arr[mid>key])
+		else if(arr[mid]>key)
 		{
 			e=mid-1;
 			
 		}
-		else if(arr[mid]<key)
+		else
 		{
 			s=mid+1;
 		}
@@ -26,7 +26,7 @@ int binarySearch(int  arr[], int n, int key)
 		mid=s+(e-s)/2;
 	}
 	
-	return 0;
+	return -1;
 }
 int main()
 {
