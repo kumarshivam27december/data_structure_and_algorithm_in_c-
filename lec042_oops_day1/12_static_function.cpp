@@ -1,6 +1,8 @@
 /*
 we need not need create object here as well we only need class
-therefore we are not using this keyword as this keyword is pointer to current object and there is no object
+therefore we are not using this keyword 
+as this keyword is pointer to current object and 
+there is no object
  
 it can access only static data member
 
@@ -19,7 +21,8 @@ class hero{
     static int random()
     {
         //cout<<this->health<<this->level<<health<<level<<name;
-        //it wont give any of these things it will only give which is static data member
+        //it wont give any of these things it will 
+        //only give which is static data member
         return timetocomplete;
     }
     hero()
