@@ -5,6 +5,7 @@ more than 1 type of inheritance make hybrid
 */
 #include <iostream>
 using namespace std;
+/*
 class A{
     public:
     void funcA()
@@ -40,6 +41,7 @@ int main()
     c.funcC();
     ////c.funcA();
 }
+*/
 /*
 Apologies for the confusion in my previous response. 
 The error in the last line is likely due to the fact 
@@ -65,26 +67,26 @@ you can use virtual inheritance.
 
 */
 
-/*
+
 
 class A {
 public:
     void funcA() {
-        cout << "inside function A";
+        cout << "inside function A\n";
     }
 };
 
 class B : virtual public A {
 public:
     void funcB() {
-        cout << "inside function B";
+        cout << "inside function B\n";
     }
 };
 
-class C : virtual public A {
+class C : virtual public A,virtual public B {
 public:
     void funcC() {
-        cout << "inside function C";
+        cout << "inside function C\n";
     }
 };
 
@@ -95,4 +97,3 @@ int main() {
     c.funcC();
 }
 
-*/
