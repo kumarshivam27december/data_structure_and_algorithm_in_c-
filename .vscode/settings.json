@@ -3,6 +3,7 @@
         ".env*": "dotenv",
         "iostream": "cpp",
         "new": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ostream": "cpp"
     }
 }
