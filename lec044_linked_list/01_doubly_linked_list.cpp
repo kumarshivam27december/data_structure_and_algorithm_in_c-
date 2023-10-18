@@ -10,7 +10,7 @@ class node{
         this->data=data;
         this->prev=NULL;
         this->next=NULL;
-    }
+    } 
     //destructor
     ~node()
     {

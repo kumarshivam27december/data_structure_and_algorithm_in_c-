@@ -48,16 +48,16 @@ bool isempty(){
 }
 };
 int main(){
-	stack st(5);
-	st.push(1);
-	st.push(2);
-	st.push(3);
+	// //stack st(5);
+	// st.push(1);
+	// st.push(2);
+	// st.push(3);
 	
-	st.pop();
+	// st.pop();
 	
-	st.peek();
+	// st.peek();
 	
-	st.isempty();
+	// st.isempty();
 	
 	return 0;
 }
