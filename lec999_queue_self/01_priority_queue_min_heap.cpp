@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    priority_queue<int> pq; //for maximum heap
+    //priority_queue<int> pq; //for maximum heap
 
     //min heap by default
     
