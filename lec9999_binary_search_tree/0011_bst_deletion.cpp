@@ -55,32 +55,55 @@ node* deleteinbst(node* root,int key){
     {
         root->right = deleteinbst(root->right,key);
     }
-    else if (key == root->data)
-    {
-        
+   
+    else{   
+
+        //case 1
+        if (root->left == NULL)
+        {
+            node* temp = root->right;
+            free(root);
+            return temp;
+        }
+
+        else if (root->right ==NULL){
+            node* temp = root->left;
+            free(root);
+            return temp;
+        }
+        //case 3
+
+        node* temp = inordersuccessor(root->right);
+        root->data = temp->data;
+        root->right = deleteinbst(root->right,temp->data);
     }
-    
-    
+    return root;
     
 }
 int main()
 {
-    node* root  = NULL;
+    // Creating the root node
+    node* root = NULL;
     
-    root  = insertbst(root,5);
-    int n;
-    cin>>n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin>>arr[i];
-    }
+    // Inserting elements into BST
+    root = insertbst(root, 50);
+    root = insertbst(root, 30);
+    root = insertbst(root, 20);
+    root = insertbst(root, 40);
+    root = insertbst(root, 70);
+    root = insertbst(root, 60);
+    root = insertbst(root, 80);
     
-    for(int i=0;i<n;i++){
-        insertbst(root,arr[i]);
-    }
-
+    // Displaying the BST using inorder traversal
+    cout << "BST after insertion: ";
     inorder(root);
-    cout<<endl;
+    
+    // Deleting an element from the BST
+    root = deleteinbst(root, 20);
+    
+    // Displaying the BST after deletion
+    cout << "\nBST after deletion: ";
+    inorder(root);
+    
     return 0;
 }
