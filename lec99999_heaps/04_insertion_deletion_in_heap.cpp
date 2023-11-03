@@ -69,8 +69,66 @@ class heap{
             }           
         }
         
+    }
+
+    void deletion(int element){
+
+        if (size==0)
+        {
+            cout<<"empty heap"<<endl;
+            return;
+        }
+        if (size==1)
+        {
+            size--;
+        }
+
+        int index = -1;
+        for (int i = 1; i <= size; i++)
+        {
+            if (arr[i]==element)
+            {
+               index = i;
+               break;
+            }
+            
+        }
+
+        if (index == -1)
+        {
+            cout<<"element not found";
+            return;
+        }
+
+        //step 1
+        arr[index] = arr[size];
+        //step 2
+        size--;
 
 
+        int i = index;
+        while (i<=size)
+        {
+          int leftindex = 2*i;
+          int rightindex = 2*i+1;
+          if (leftindex<size && arr[i]<arr[leftindex] && arr[leftindex] > arr[index])
+          {
+            swap(arr[leftindex],arr[index]);
+            i = leftindex;
+          }
+          else if (rightindex<size && arr[i]<arr[rightindex] && arr[rightindex] > arr[index])
+          {
+            swap(arr[rightindex],arr[index]);
+            i = rightindex;
+          }
+          else{
+            return;
+          }
+        }
+        
+        
+        
+        
         
     }
 };
@@ -85,5 +143,7 @@ int main()
     h.print();
     h.deletion();
     h.print();
-          return 0;
+    h.deletion(54);
+    h.print();
+    return 0;
 }
