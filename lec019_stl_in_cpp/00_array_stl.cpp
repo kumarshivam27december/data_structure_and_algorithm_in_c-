@@ -10,6 +10,8 @@ int main()
     {
         cout<<a[i]<<endl;
     } 
+    
+
     cout<<"element at 2nd index "<<a.at(2)<<endl;
     cout<<"array empty or not  "<<a.empty()<<endl;
     cout<<"first element "<<a.front()<<endl;

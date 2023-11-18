@@ -42,7 +42,7 @@ int main()
 {
     node* root  = NULL;
     
-    root  = insertbst(root,5);
+    
     int n;
     cin>>n;
     int arr[n];
@@ -50,8 +50,9 @@ int main()
     {
         cin>>arr[i];
     }
+    root  = insertbst(root,arr[0]);
     
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         insertbst(root,arr[i]);
     }
 
