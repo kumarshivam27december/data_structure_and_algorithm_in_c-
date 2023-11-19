@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <bits/stdc++.h>
 #include <stack>
 using namespace std;
 int main()
@@ -20,5 +22,9 @@ int main()
     }
 
     cout<<"answer is "<<ans<<endl;
+    reverse(str.begin(),str.end());
+    cout<<str<<endl;
+    reverse(str.begin(),str.end());
+    cout<<str;
     return 0;
 }

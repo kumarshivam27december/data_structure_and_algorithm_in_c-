@@ -11,8 +11,6 @@ class Stack{
         top=-1;
     }
     
-
-
     void push(int data){
 
         //check of it is empty or not
@@ -83,6 +81,13 @@ int main()
     }else{
         cout<<"The stack is not empty"<<endl;
     }
+
+    while (!st.isEmpty())
+    {
+        cout<<st.peek()<<" ";
+        st.pop();
+    }
+    
     
     return 0;
 }

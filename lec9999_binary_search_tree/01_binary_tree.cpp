@@ -25,9 +25,41 @@ node* insertion(node* root,int key){
 
     return root;
 }
+node* inordersucc(node* root){
+    node* curr = root;
+    while(curr && curr->left !=NULL){
+        curr = curr->left;
+    }
 
+    return curr;
+    
+}
 node* deletion(node* root,int key){
-return NULL;
+    if(root->val < key){
+        root->right = deletion(root->right,key);
+    }else if (root->val > key)
+    {
+        root->left = deletion(root->left,key);
+    }else{
+        if (root->left == NULL)
+        {
+           node* temp = root->right;
+           free(root);
+           return temp;
+        }
+        else if(root->right == NULL){
+            node* temp = root->left;
+            free(root);
+            return temp;
+        }
+
+        node* temp = inordersucc(root->right);
+        root->val = temp->val;
+        root->right = deletion(root->right,temp->val);
+        
+    }
+    return root;
+    
 }
 
 node* searching(node* root,int key){
@@ -44,6 +76,8 @@ node* searching(node* root,int key){
     }
     return NULL;
 }
+
+
 
 void pre(node* root){
     if(root==NULL){
@@ -91,6 +125,7 @@ int main(){
         insertion(root,arr[i]);
     }
 
+    
     pre(root);cout<<endl;post(root);cout<<endl;in(root);cout<<endl;
     int pos;cin>>pos;
     if(searching(root,pos)){
@@ -98,5 +133,19 @@ int main(){
     }else{
         cout<<"no";
     }
+
+    
+
+
+    cout<<endl;
+    int b;cin>>b;
+    deletion(root,b);
+    
+    if(searching(root,b)){
+        cout<<"yes";
+    }else{
+        cout<<"no";
+    }
+
     return 0;
 }

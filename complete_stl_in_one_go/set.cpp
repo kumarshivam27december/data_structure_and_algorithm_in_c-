@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     set <int> h;
-    set <int> :: iterator it=h.begin();
+    // set <int> :: iterator it=h.begin();
     int a;
     cin>>a;
     int arr[a];
@@ -23,13 +23,10 @@ int main(){
 
     // sort(h.begin(),h.end());
 
-    for(it  = h.begin();it!= h.end();++it){
+    for(auto it  = h.begin();it!= h.end();++it){
         cout<<*it<<" ";
     }cout<<endl;
     
 
-    for(it  = h.begin();it!= h.end();++it){
-        cout<<*it<<" ";
-    }
 
 }
