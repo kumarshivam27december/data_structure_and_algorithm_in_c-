@@ -1,6 +1,6 @@
 /*
 
-important games
+important games script based game
 
 creating a text  based game
 
