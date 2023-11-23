@@ -11,6 +11,7 @@ creating a text  based game
 
 
 ////just creating a text based game with no good looking quality
+--using function switch and loops
 
 
 */
