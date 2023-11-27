@@ -69,8 +69,34 @@ SetConsoleTextAttribute(console_color, 1);
     char start;cin>>start;
     if(start=='Y' || start=='y'){
          SetConsoleTextAttribute(console_color, 7); 
-        cout<<"Starting the game\n";
+         cout<<"Starting the game\n";
+         cout<<"LEVEL 1\n";
+         int level = 1;
+         int initial_amount = 0;
+         cout<<"Question no-1"<<endl; 
+         cout<<"who was the founder of c language ?\n";
+         cout<<"A)Dennis Ritchie\n";
+         cout<<"B)Bill gates\n";
+         cout<<"C)Guido van Rossum\n";
+         cout<<"D)Sam Altman\n";
+         cout<<"choose your answer (A,B,C,D)\n";
+         cout<<"IF YOU WANT HELP PRESS H\n";
+
+         char qn1;cin>>qn1;
+
+         
+         if(qn1 == 'A' || qn1 == 'a'){
+            cout<<"You are correct\n";
+            initial_amount = 1000;
+            cout<<"You have won "<<initial_amount<<endl;
+         }else if(qn1 == 'H' || qn1 == 'h'){
+            cout<<"So you need help\n";
+            cout<<"Alright! \n";
+            cout<<"Choose 1 for "
+
+         }
         //code here
+
     }else{
          SetConsoleTextAttribute(console_color, 8); 
         cout<<"Thanks for you response\nExiting the game\n";
