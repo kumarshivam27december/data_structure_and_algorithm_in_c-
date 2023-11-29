@@ -92,8 +92,17 @@ SetConsoleTextAttribute(console_color, 1);
          }else if(qn1 == 'H' || qn1 == 'h'){
             cout<<"So you need help\n";
             cout<<"Alright! \n";
-            cout<<"Choose 1 for "
-
+            cout<<"Choose\n1-> for 50:50\n2-> for phone your friend\n3->for question swap\n";
+            int lifeline ;cin>>lifeline;
+            switch (lifeline)
+            {
+            case 1:
+               cout<<"The incorrect options are \nBill gates\nSam Altman\n";
+               break;
+            
+            default:
+               break;
+            }
          }
         //code here
 
