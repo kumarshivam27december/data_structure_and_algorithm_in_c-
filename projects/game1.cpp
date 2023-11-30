@@ -99,6 +99,31 @@ SetConsoleTextAttribute(console_color, 1);
             case 1:
                cout<<"The incorrect options are \nBill gates\nSam Altman\n";
                break;
+
+            case 2:
+               cout<<"The answer a/c to your friend is \nA)Dennis Ritchie\n";
+               break;
+            case 3:
+               cout<<"replacing the question\n";
+               cout<<"who was the founder of window operating system ?\n";
+               cout<<"A)Dennis Ritchie\n";
+               cout<<"B)Bill gates\n";
+               cout<<"C)Guido van Rossum\n";
+               cout<<"D)Sam Altman\n";
+               cout<<"choose your answer (A,B,C,D)\n";
+
+               char k;cin>>k;
+               if(k=='B' || k=='b'){
+                  cout<<"Correct you can go head"<<endl;
+                  initial_amount = 1000;
+                  cout<<"You have won "<<initial_amount<<endl;
+
+               }else{
+                  cout<<"Oooo ! you are wrong !"<<endl;
+                  cout<<"Your total amount is $0"<<endl;
+                  cout<<"Exiting the game"<<endl;
+                  return 0;
+               }
             
             default:
                break;
