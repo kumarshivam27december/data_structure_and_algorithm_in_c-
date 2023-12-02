@@ -39,6 +39,9 @@ SetConsoleTextAttribute(console_color, 1);
     cout<<"You must follow all the rule strictly"<<endl;
     cout<<"Second rule:"<<endl;
     cout<<"You have to give answer in limited time"<<"\n";
+    cout<<"Third rule: "<<endl;
+    cout<<"Any choosing of another options will bbe treated as malpractice and you will be exiting the game\n ";
+
     cout<<"You will be given 7 questions and you have to answer it"<<"\n";
     cout<<"1qn->$1000\n2qn->$5000\n3qn->$20,000\n4qn->$50,000\n5qn->$100,000\n6qn->$500,000\n7qn->1,000,000\n";
     cout<<endl;
@@ -124,8 +127,13 @@ SetConsoleTextAttribute(console_color, 1);
                   cout<<"Exiting the game"<<endl;
                   return 0;
                }
+               break;
             
             default:
+               cout<<"You have choosen the wrong option\n";
+               cout<<"Any such things could be appear to us as malpractise\n";
+               cout<<"Exiting the game\n";
+               return 0;
                break;
             }
          }
