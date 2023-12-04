@@ -92,6 +92,13 @@ SetConsoleTextAttribute(console_color, 1);
             cout<<"You are correct\n";
             initial_amount = 1000;
             cout<<"You have won "<<initial_amount<<endl;
+            cout<<"LEVEL 2"<<endl;
+            cout<<"Congrats once again\n";
+
+
+            //code here
+
+            
          }else if(qn1 == 'H' || qn1 == 'h'){
             cout<<"So you need help\n";
             cout<<"Alright! \n";
@@ -121,6 +128,10 @@ SetConsoleTextAttribute(console_color, 1);
                   initial_amount = 1000;
                   cout<<"You have won "<<initial_amount<<endl;
 
+
+                  cout<<"LEVEL 2"<<endl;
+                  cout<<"Congrats once again"<<endl;
+                  //continue here
                }else{
                   cout<<"Oooo ! you are wrong !"<<endl;
                   cout<<"Your total amount is $0"<<endl;
