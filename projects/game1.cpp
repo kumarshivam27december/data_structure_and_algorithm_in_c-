@@ -77,6 +77,8 @@ int main(){
          SetConsoleTextAttribute(console_color, 7); 
          cout<<"Starting the game\n";
          cout<<"LEVEL 1\n";
+         //level1
+
          int level = 1;
          int initial_amount = 0;
          cout<<"Question no-1"<<endl; 
@@ -164,6 +166,62 @@ int main(){
                               cout<<"You are playing really well \nif you want to continue the game press y or Y else press any other key to exit the game\n";
                               char exit2;cin>>exit2;
                               if(exit2=='Y'||exit2=='y'){
+                                 
+                                 cout<<"You have to continue the game\n";
+                                 cout<<"Level 6\n";
+                                 SetConsoleTextAttribute(console_color, 2);
+                                 cout<<"Here is the next question \n";
+                                 cout<<"Who is known as the 'Iron Man of India?\nA. Jawaharlal Nehru\nB. Sardar Vallabhbhai Patel\nC. Subhas Chandra Bose\nD. Mahatma Gandhi\n";
+                                 char ans3;cin>>ans3;
+                                 if (ans3=='B' ||ans3=='b')
+                                 {
+                                    cout<<"You are correct\n";
+                                    cout<<"Congrats you have won $500,000\n";
+                                    cout<<"You are doing preety well \n";
+                                    cout<<"Press Y or y to continue or any other key to exit\n";
+                                    char exit3;
+                                    cin>>exit3;
+                                    if(exit3=='Y'||exit3=='y'){
+                                       cout<<"So , you are ready for the last level\n ";
+                                       cout<<"Again if  you loose this qn you will loose all the money that you have won till her\n";
+                                       cout<<"Are you sure  to take the risk\n";
+                                       cout<<"Press p or P if you are ready\n";
+                                       cout<<"else press any other key to exit the game\n";
+                                       char exit4;cin>>exit4;
+                                       if(exit4=='P' ||exit4=='p'){
+                                          cout<<"As you are sure about the game\n";
+                                          cout<<"LEVEL 7\n";
+                                          cout<<"So here is the question\n";
+                                          cout<<"Which organelle is responsible for producing energy in a cell?\nA. Nucleus\nB. Ribosome\nC. Mitochondrion\nD. Endoplasmic Reticulum";
+                                          cout<<"\nThis is really a tough one\n";
+                                          cout<<"press H for help\n";
+
+                                          char ans4;cin>>ans4;
+                                          if(ans4=='c' ||ans4=='C'){
+                                              cout<<"Wooooooooooo ! you are correct\n";
+                                              cout<<"Thats is an absolutely correct answer\n";
+                                              cout<<"And you have won a million dollar\n";
+                                              cout<<"Congrats you have nailed it\n";
+                                              cout<<"Thanks for joining see you again\n";
+                                              cout<<"Exiting the game";
+                                              return 0;
+                                          }else if(ans4=='H' ||ans4=='h'){
+
+                                             //lifeline qn
+
+
+                                          }else{
+
+
+                                             //you are wrong
+
+
+                                          }
+                                       }
+                                    }
+                                 }
+                                 
+
                                  //continue the game
 
                               }else{
@@ -358,13 +416,7 @@ C. Hyperlink and Text Management Language
 D. Human Touch Manipulation Language
 Answer: A
 
-Question 2:
-Which programming language is used for creating dynamic web pages?
-A. Java
-B. Python
-C. JavaScript
-D. C++
-Answer: C
+
 
 History:
 Question 3:
@@ -402,28 +454,12 @@ Answer: C
 
 Biology:
 Question 7:
-Which organelle is responsible for producing energy in a cell?
-A. Nucleus
-B. Ribosome
-C. Mitochondrion
-D. Endoplasmic Reticulum
 Answer: C
 
-Question 8:
-What is the largest organ in the human body?
-A. Liver
-B. Heart
-C. Skin
-D. Brain
-Answer: C
 
 India:
 Question 9:
-Who is known as the "Iron Man of India"?
-A. Jawaharlal Nehru
-B. Sardar Vallabhbhai Patel
-C. Subhas Chandra Bose
-D. Mahatma Gandhi
+
 Answer: B
 
 Question 10:
