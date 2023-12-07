@@ -40,7 +40,7 @@ SetConsoleTextAttribute(console_color, 1);
     cout<<"Second rule:"<<endl;
     cout<<"You have to give answer in limited time"<<"\n";
     cout<<"Third rule: "<<endl;
-    cout<<"Any choosing of another options will bbe treated as malpractice and you will be exiting the game\n ";
+    cout<<"Any choosing of another options will be treated as malpractice and you will be exiting the game\n ";
 
     cout<<"You will be given 7 questions and you have to answer it"<<"\n";
     cout<<"1qn->$1000\n2qn->$5000\n3qn->$20,000\n4qn->$50,000\n5qn->$100,000\n6qn->$500,000\n7qn->1,000,000\n";
@@ -95,8 +95,97 @@ SetConsoleTextAttribute(console_color, 1);
             cout<<"LEVEL 2"<<endl;
             cout<<"Congrats once again\n";
 
+            cout<<"So, here we go with round 2\n";
+            cout<<"What is the curreny of china?\n";
+            cout<<"A)Yen\n";
+            cout<<"B)Chinese dollar\n";
+            cout<<"C)Ruble\n";
+            cout<<"D)Yuan\n";
+            cout<<"choose your answer (A,B,C,D)\n";
+            cout<<"IF YOU WANT HELP PRESS H\n";
+            char f;cin>>f;
+            if(f=='D'||f=='d'){
 
-            //code here
+               cout<<"You are correct\n";
+               initial_amount = 5000;
+               cout<<"You have won "<<initial_amount<<endl;
+               cout<<"LEVEL 3"<<endl;
+               cout<<"Congrats once again\n";
+
+               cout<<"So, here we go with round 3\n";
+               cout<<"In whose era of election lal bahdur shashtri was killed?\n";
+               cout<<"A)sonia gandhi\n";
+               cout<<"B)rajiv gandhi\n";
+               cout<<"C)rahul gandhi\n";
+               cout<<"D)indira gandhi\n";
+               cout<<"choose your answer (A,B,C,D)\n";
+               cout<<"IF YOU WANT HELP PRESS H\n";
+
+               //code here
+            }else if(f=='H'||f=='h'){
+                  //applying switch case here 
+                   cout<<"So you need help\n";
+                   cout<<"Alright! \n";
+                   cout<<"Choose\n1-> for 50:50\n2-> for phone your friend\n3->for question swap\n";
+                   int lifeline ;cin>>lifeline;
+                  switch (lifeline)
+                  {
+                     case 1:
+                     cout<<"The incorrect options are \nRubles \nchinese dollar\n";
+                     break;
+
+                  case 2:
+                     cout<<"The answer a/c to your friend is \nD)Yuan\n";
+                     break;
+                  case 3:
+                     cout<<"replacing the question\n";
+                     cout<<"which fish does not lay eggs?\n";
+                     cout<<"A)gold fish\n";
+                     cout<<"B)dolphin\n";
+                     cout<<"C)shark\n";
+                     cout<<"D)tuna fish\n";
+                     cout<<"choose your answer (A,B,C,D)\n";
+
+                     char k;cin>>k;
+                     if(k=='B' || k=='b'){
+                        cout<<"Correct you can go head"<<endl;
+                        initial_amount = 5000;
+                        cout<<"You have won "<<initial_amount<<endl;
+
+
+                        cout<<"LEVEL 3"<<endl;
+                        cout<<"Congrats once again"<<endl;
+                        //continue here
+
+
+
+                     }else{
+                        cout<<"Oooo ! you are wrong !"<<endl;
+                        cout<<"Your total amount is $0"<<endl;
+                        cout<<"Exiting the game"<<endl;
+                        return 0;
+                     }
+                     break;
+                  
+                     default:
+                        cout<<"You have choosen the wrong option\n";
+                        cout<<"Any such things could be appear to us as malpractise\n";
+                        cout<<"Exiting the game\n";
+                        return 0;
+                        break;
+                  }
+
+
+            }else{
+                  cout<<"Oooo ! you are wrong !"<<endl;
+                  cout<<"The correct option was D Yuan is the currency of china\n";
+                  cout<<"Your total amount is $0"<<endl;
+                  cout<<"Thanks for the game \nMeet you in the next game\n";
+                  cout<<"Exiting the game"<<endl;
+                  return 0;
+
+            }
+            
 
             
          }else if(qn1 == 'H' || qn1 == 'h'){
@@ -158,3 +247,182 @@ SetConsoleTextAttribute(console_color, 1);
 
     return 0;
 }
+
+
+
+
+/*
+
+Certainly! Here are 20 multiple-choice questions (MCQs) with four options each, covering technology, history, geography, biology, and India, along with the correct answers:
+
+Technology:
+Question 1:
+What does "HTML" stand for in web development?
+A. HyperText Markup Language
+B. High-Level Text Manipulation
+C. Hyperlink and Text Management Language
+D. Human Touch Manipulation Language
+Answer: A
+
+Question 2:
+Which programming language is used for creating dynamic web pages?
+A. Java
+B. Python
+C. JavaScript
+D. C++
+Answer: C
+
+History:
+Question 3:
+Who was the famous queen of ancient Egypt known for her beauty and intelligence?
+A. Cleopatra
+B. Nefertiti
+C. Hatshepsut
+D. Isis
+Answer: A
+
+Question 4:
+Which war is often referred to as the "War of Independence" in the United States?
+A. World War I
+B. American Civil War
+C. American Revolutionary War
+D. Vietnam War
+Answer: C
+
+Geography:
+Question 5:
+Which continent is known as the "Land Down Under"?
+A. Africa
+B. Europe
+C. Australia
+D. South America
+Answer: C
+
+Question 6:
+What is the capital city of Japan?
+A. Beijing
+B. Seoul
+C. Tokyo
+D. Bangkok
+Answer: C
+
+Biology:
+Question 7:
+Which organelle is responsible for producing energy in a cell?
+A. Nucleus
+B. Ribosome
+C. Mitochondrion
+D. Endoplasmic Reticulum
+Answer: C
+
+Question 8:
+What is the largest organ in the human body?
+A. Liver
+B. Heart
+C. Skin
+D. Brain
+Answer: C
+
+India:
+Question 9:
+Who is known as the "Iron Man of India"?
+A. Jawaharlal Nehru
+B. Sardar Vallabhbhai Patel
+C. Subhas Chandra Bose
+D. Mahatma Gandhi
+Answer: B
+
+Question 10:
+Which river is considered the holiest in Hinduism?
+A. Ganges
+B. Yamuna
+C. Brahmaputra
+D. Godavari
+Answer: A
+
+Technology:
+Question 11:
+What does VPN stand for in the context of computer networks?
+A. Virtual Private Network
+B. Very Personal Network
+C. Visual Processing Node
+D. Voice and Phone Network
+Answer: A
+
+Question 12:
+Which of the following is an example of a social media platform?
+A. Microsoft Excel
+B. Instagram
+C. Adobe Photoshop
+D. Google Chrome
+Answer: B
+
+History:
+Question 13:
+Who was the famous playwright known for works like "Romeo and Juliet" and "Hamlet"?
+A. William Wordsworth
+B. William Shakespeare
+C. Jane Austen
+D. Charles Dickens
+Answer: B
+
+Question 14:
+In which century did the Industrial Revolution begin?
+A. 17th
+B. 18th
+C. 19th
+D. 20th
+Answer: B
+
+Geography:
+Question 15:
+Which ocean is the largest by surface area?
+A. Atlantic Ocean
+B. Indian Ocean
+C. Southern Ocean
+D. Pacific Ocean
+Answer: D
+
+Question 16:
+Which mountain range separates Europe from Asia?
+A. Rocky Mountains
+B. Himalayas
+C. Ural Mountains
+D. Alps
+Answer: C
+
+Biology:
+Question 17:
+What is the primary function of the respiratory system?
+A. Circulating blood
+B. Producing hormones
+C. Breathing and gas exchange
+D. Digesting food
+Answer: C
+
+Question 18:
+Which gas do plants primarily absorb during photosynthesis?
+A. Oxygen
+B. Carbon Dioxide
+C. Nitrogen
+D. Hydrogen
+Answer: B
+
+India:
+Question 19:
+Who was the first Prime Minister of India?
+A. Jawaharlal Nehru
+B. Indira Gandhi
+C. Rajiv Gandhi
+D. Narendra Modi
+Answer: A
+
+Question 20:
+Which festival is celebrated with the flying of kites in India?
+A. Holi
+B. Diwali
+C. Makar Sankranti
+D. Navratri
+Answer: C
+
+*/
