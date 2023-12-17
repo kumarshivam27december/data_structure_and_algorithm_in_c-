@@ -211,11 +211,11 @@ int main(){
 
 
                                           }else{
-
-
-                                             //you are wrong
-
-
+                                                cout<<"you are wrong";
+                                                cout<<"Well played";
+                                                cout<<"better luck next time";
+                                                cout<<"Exiting the game";
+                                                return 0;                                        
                                           }
                                        }
                                     }
@@ -353,6 +353,14 @@ int main(){
 
             case 2:
                cout<<"The answer a/c to your friend is \nA)Dennis Ritchie\n";
+               cout<<"Do you want to go with friend";
+               cout<<"If yes press A or a else choose your option";
+               char ansh1 ;cin>>ansh1;
+               if (ansh1=='A' ||ansh1=='a')
+               {
+                  cout<<"You are correct\nYou have won";
+               }
+               
                break;
             case 3:
                cout<<"replacing the question\n";
@@ -372,7 +380,106 @@ int main(){
 
                   cout<<"LEVEL 2"<<endl;
                   cout<<"Congrats once again"<<endl;
-                  //continue here
+                 
+
+                  cout<<"So, here we go with round 2\n";
+                  cout<<"What is the curreny of china?\n";
+                  cout<<"A)Yen\n";
+                  cout<<"B)Chinese dollar\n";
+                  cout<<"C)Ruble\n";
+                  cout<<"D)Yuan\n";
+                  cout<<"choose your answer (A,B,C,D)\n";
+                  cout<<"IF YOU WANT HELP PRESS H\n";
+
+                  char ans12;cin>>ans12;
+                  if(ans12=='d'||ans12=='D'){
+                     cout<<"Hurray! you are correct";
+                     initial_amount = 5000;
+                     cout<<"You have won $ "<<initial_amount<<endl;
+                     cout<<"LEVEL 3"<<endl;
+                     cout<<"So the next question worth $20,000\n play with caution";
+                     cout<<"So here is the next question\n";
+                     cout<<"Which river is considered the holiest in Hinduism?\nA. Ganges\nB. Yamuna\nC. Brahmaputra \nD. Godavari ";
+                     char anslevel3 ;cin>>anslevel3;
+                     cout<<"I don't think you will require help for this questions";
+                     if (anslevel3=='A' || anslevel3=='a')
+                     {
+                        cout<<"Yes  you are correct\n the correct option is a";
+                        cout<<"You have won $20,000";
+                        cout<<"press Y or y to continue the games else any other key to exit the game\n";
+                     }
+                     
+
+
+
+
+
+
+                  }else if(ans12=='h' ||ans12=='H'){
+                     cout<<"You need help Alright then";
+                     cout<<"Choose\n1-> for 50:50\n2-> for phone your friend\n3->for question swap\n";
+                     char option5 ;cin>>option5;
+                     if (ff>=1)
+                     {
+                        cout<<"cannot use this lifeline you have already used it"<<endl;
+
+                     }else if(pyf>=1){
+                        cout<<"You cannot phone your friend as you have already used it"<<endl;
+                     }else if(rq>=1){
+                        cout<<"You cannot use this option as you have already used it"<<endl;
+                     }
+
+                     else if(ff==0){
+                        if (option5=='1')
+                        {
+                        cout<<"You have choosen 50-50 options so incorrect options are";
+                        cout<<"Chinese dollar and Ruble";
+                        //continue code
+                        cout<<"Now choose an option";
+                        char option6;cin>>option6;
+                        if (option6=='d' ||option6=='D')
+                        {
+                           cout<<"yupp you are correct";
+                           cout<<"You have won $ 5000";
+
+                           cout<<"Do you want to continue";
+                           cout<<"press y or Y to continue or any other key to exit";
+                           char exit5;
+                           cin>>exit5;
+                           if (exit5=='Y' ||exit5=='y')
+                           {
+                              cout<<"So,as you have wished \n continuing the game\n";
+                              //continue code
+
+                           }
+                           
+                        }
+                        
+                        }
+                        
+                       
+                     }else if(pyf==0){
+
+                        if(option5=='2'){
+                        cout<<"According to your friend the correct options is option D";
+                        //continue code 
+                        }
+                     }else{
+                        cout<<"You have not choosen any correct code option";
+                     }
+                     
+
+                     
+                     
+
+                  }else{
+                     cout<<"You are wrong";
+                     cout<<"The correct answer is "<<ans12<<"i.e Yuan"<<endl;
+                     cout<<"See you sooner";
+                     cout<<"goodbye";
+                  }
+
+
                }else{
                   cout<<"Oooo ! you are wrong !"<<endl;
                   cout<<"Your total amount is $0"<<endl;
@@ -463,12 +570,7 @@ Question 9:
 Answer: B
 
 Question 10:
-Which river is considered the holiest in Hinduism?
-A. Ganges
-B. Yamuna
-C. Brahmaputra
-D. Godavari
-Answer: A
+
 
 Technology:
 Question 11:
