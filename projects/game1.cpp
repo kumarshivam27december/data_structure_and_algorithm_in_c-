@@ -121,7 +121,7 @@ int main(){
                cout<<"Congrats once again\n";
 
                cout<<"So, here we go with round 3\n";
-               cout<<"In whose era of election lal bahdur shashtri was killed?\n";
+               cout<<"In was the next pm of india after lal bahdur shashtri was assassined in Taskent uzbekistan?\n";
                cout<<"A)sonia gandhi\n";
                cout<<"B)rajiv gandhi\n";
                cout<<"C)rahul gandhi\n";
@@ -402,12 +402,107 @@ int main(){
                      cout<<"Which river is considered the holiest in Hinduism?\nA. Ganges\nB. Yamuna\nC. Brahmaputra \nD. Godavari ";
                      char anslevel3 ;cin>>anslevel3;
                      cout<<"I don't think you will require help for this questions";
+                     cout<<"But still if you need help press h or H\n";
                      if (anslevel3=='A' || anslevel3=='a')
                      {
                         cout<<"Yes  you are correct\n the correct option is a";
                         cout<<"You have won $20,000";
                         cout<<"press Y or y to continue the games else any other key to exit the game\n";
+                        char continuing1 ;cin>>continuing1;
+                        if (continuing1=='Y' ||continuing1=='y')
+                        {
+                           cout<<"Procedding the game\n";
+                           cout<<"LEVEL 4";
+                           cout<<"So the next question worth $50,000 is here on your screen\n";
+                           //continuing the game
+                           cout<<"Which mountain range separates Europe from Asia?\nA. Rocky Mountains\nB. Himalayas\nC. Ural Mountains\nD. Alps\n";
+                           char anslevel4;cin>>anslevel4;
+                           if (anslevel4=='c' ||anslevel4=='C')
+                           {
+                              cout<<"Hurray! you are right\n";
+                              cout<<"You have won $50,000\n";
+                              cout<<"So,do you want to quite the game\nor continue\n";
+                              cout<<"press y or Y to continue the game\n alse any other key to exit the game\n";
+                              char exit6;cin>>exit6;
+                              if (exit6=='Y' ||exit6=='y')
+                              {
+                                 cout<<"So you opted to continue the game\n";
+                                 cout<<"LEVEL 5";
+                                 cout<<"So the next question worth $100,000 is here on your screen\n";
+
+                                 //continue the questions here
+                                 cout<<"What does VPN stand for in the context of computer networks?\nA. Virtual Private Network\nB. Very Personal Network\nC. Visual Processing Node\nD. Voice and Phone Network";
+                                 cout<<"press h or H"<<endl;
+                                 char anslevel5;cin>>anslevel5;
+                                 if (anslevel5=='A' ||anslevel5=='a')
+                                 {
+                                    cout<<"Yes , you are correct\n";
+                                    cout<<"congrats! ";
+                                    cout<<"You have won $100,000";
+                                 }else if(anslevel5=='h' ||anslevel5=='H'){
+                                    cout<<"You need help\n";
+                                    cout<<"alright then\n";
+                                    //continue here
+                                 }else{
+                                    cout<<"Oooo you are wrong\n";
+                                    cout<<"The correct option was A> Virtual Private Network\n";
+                                    cout<<"Better luck next time\n";
+                                    cout<<"Exiting the game\n";
+                                    return 0;
+                                 }
+                                 
+
+                              }
+                              else{
+                                 cout<<"So you opted to exit the game\n";
+                                 cout<<"See you soon in the next game\n";
+                                 cout<<"Exiting the game\n";
+                                 return 0;
+                              }           
+                           }
+                           
+                           
+
+
+
+
+
+
+
+                        }else{
+                           cout<<"Now so you want to exit the game";
+                           cout<<"Meet you soon in the next game\n";
+                           cout<<"Exiting the game\n";
+                           return 0;
+                        }
+                        
                      }
+                     else if (anslevel3=='H' ||anslevel3=='h')
+                     {
+                        cout<<"You want help alright";
+                        cout<<"Since you have already used question swap help";
+                        cout<<"The only option left are phone your friend and 50-50";
+                        cout<<"press p or P for phone your friend helpline OR press f or F for 50-50 options\n";
+                        char optionlevel3;cin>>optionlevel3;
+                        if (pyf>=1)
+                        {
+                          cout<<"sorry my friend, you have already used this option\n";
+
+                        }
+                        
+
+
+
+
+
+                     }else{
+                           cout<<"Oooo you have choosen wrong option\n";
+                           cout<<"the correct option was A> Ganges river";
+                           cout<<"better luck next time";
+                           cout<<"Exiting the game\n";
+                           return 0;
+                     }
+                     
                      
 
 
@@ -422,11 +517,14 @@ int main(){
                      if (ff>=1)
                      {
                         cout<<"cannot use this lifeline you have already used it"<<endl;
+                        //continuing code
 
                      }else if(pyf>=1){
                         cout<<"You cannot phone your friend as you have already used it"<<endl;
+                           //continuing code
                      }else if(rq>=1){
                         cout<<"You cannot use this option as you have already used it"<<endl;
+                           //continuing code
                      }
 
                      else if(ff==0){
@@ -574,11 +672,7 @@ Question 10:
 
 Technology:
 Question 11:
-What does VPN stand for in the context of computer networks?
-A. Virtual Private Network
-B. Very Personal Network
-C. Visual Processing Node
-D. Voice and Phone Network
+
 Answer: A
 
 Question 12:
@@ -616,11 +710,7 @@ D. Pacific Ocean
 Answer: D
 
 Question 16:
-Which mountain range separates Europe from Asia?
-A. Rocky Mountains
-B. Himalayas
-C. Ural Mountains
-D. Alps
+
 Answer: C
 
 Biology:
