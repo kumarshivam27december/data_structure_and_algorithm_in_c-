@@ -77,8 +77,6 @@ int main(){
          SetConsoleTextAttribute(console_color, 7); 
          cout<<"Starting the game\n";
          cout<<"LEVEL 1\n";
-         //level1
-
          int level = 1;
          int initial_amount = 0;
          cout<<"Question no-1"<<endl; 
@@ -136,7 +134,6 @@ int main(){
                   cout<<"If you want to continue this game press 'Y' or 'y'\n else select any other key to exit the game\n";
                   char m;cin>>m;
                   if(m=='Y'||m=='y'){
-                     //continue the game
                      SetConsoleTextAttribute(console_color, 2);
                      cout<<"Welcome to the LEVEL 4"<<endl;
                      cout<<"What is the largest organ in the human body?\nA. Liver\nB. Heart\nC. Skin\nD. Brain\n";
@@ -149,7 +146,6 @@ int main(){
                         cout<<"Do you want to continue press 'Y' or 'y' else any key to exit\n";
                         char exit1;cin>>exit1;
                         if(exit1=='Y' || exit1=='y'){
-                           //continue the next level 
                            SetConsoleTextAttribute(console_color, 14); 
 
                            cout<<"So , you wanted to continue this game\n";
@@ -207,8 +203,34 @@ int main(){
                                               return 0;
                                           }else if(ans4=='H' ||ans4=='h'){
 
-                                             //lifeline qn
-
+                                             cout<<"So you need help alright";
+                                             cout<<"Choose\n1-> for 50:50\n2-> for phone your friend\n3->for question swap\n";
+                                             char lifeline2;cin>>lifeline2;
+                                             if (lifeline2=='1')
+                                             {
+                                               if (ff>=1)
+                                                {
+                                                   cout<<"you have already used this lifeline";
+                                                }else{
+                                                   cout<<"The incorrect options are A and B";
+                                                   cout<<"So continue with your answer";
+                                                   char lifeline3;cin>>lifeline3;
+                                                   if (lifeline3=='c'||lifeline3=='C')
+                                                   {
+                                                     cout<<"Alright you are absolutely correct\n";
+                                                     cout<<"c is the correct option\n";
+                                                     cout<<"You have won $1,000,000\n";
+                                                     cout<<"You have successfully completed whole of the game\n";
+                                                     cout<<"congrats once again\n"<<endl;
+                                                     cout<<"Amount will be deposited to your account\n";
+                                                     cout<<"See you next time\n";
+                                                     cout<<"completing the game\n";
+                                                     return 0;
+                                                   }
+                                                   
+                                                }
+                                             }
+                                                                               
 
                                           }else{
                                                 cout<<"you are wrong";
@@ -349,6 +371,16 @@ int main(){
             {
             case 1:
                cout<<"The incorrect options are \nBill gates\nSam Altman\n";
+               char firstlifelineanswer;cin>>firstlifelineanswer;
+               if (firstlifelineanswer=='a' ||firstlifelineanswer=='A')
+               {
+                  cout<<"You are correct\n";
+                  cout<<"You have won $1000\n";
+                  cout<<"Level 2\n";
+
+
+               }
+               
                break;
 
             case 2:
@@ -359,8 +391,12 @@ int main(){
                if (ansh1=='A' ||ansh1=='a')
                {
                   cout<<"You are correct\nYou have won";
+                  cout<<"Congrats once again\n";
+                  cout<<"So welcome to level 2";
                }
                
+
+
                break;
             case 3:
                cout<<"replacing the question\n";
@@ -484,15 +520,203 @@ int main(){
                         cout<<"The only option left are phone your friend and 50-50";
                         cout<<"press p or P for phone your friend helpline OR press f or F for 50-50 options\n";
                         char optionlevel3;cin>>optionlevel3;
-                        if (pyf>=1)
-                        {
-                          cout<<"sorry my friend, you have already used this option\n";
+                        
+                        if(optionlevel3=='p' ||optionlevel3=='P'){
+                           if (pyf>=1)
+                           {
+                              cout<<"sorry my friend, you have already used this option\n";
+                              cout<<"You are not allowed to use this lifeline\n";
+                              cout<<"Now you are left with no other option rather you have 50-50\n";
+                              cout<<"press f or F for 50-50 options or else you can choose as your wish\n";
+                              char ffo;cin>>ffo;
+                              if (ffo=='f' ||ffo == 'F')
+                              {
+                                 cout<<"You want this 50-50 lifeline\n";
+                                 cout<<"So the incorrect options are c and d\n";
+                                 char newans1;cin>>newans1;
+                                 if (newans1=='A' ||newans1=='a')
+                                 {
+                                    cout<<"Hurray! you got this right this time\n";
+                                    cout<<"So do you really want to continue the game\n";
+                                    cout<<"If yes press y or Y\n";
+                                    cout<<"press any another key to exit\n";
+                                    char stupidperson1;cin>>stupidperson1;
+                                    if(stupidperson1=='Y'||stupidperson1=='y'){
+                                       cout<<"You want to continue the game\n";
+                                       cout<<"Alright then\n";
+                                       cout<<"Level 3\n";
+                                       cout<<"Which of the following is an example of a social media platform?\nA. Microsoft Excel\nB. Instagram\nC. Adobe Photoshop\nD. Google Chrome";
+                                       cout<<"You have no lifeline left\n";
+                                       cout<<"please play wisely\n";
+                                       char stupidperson2;cin>>stupidperson2;
+                                       if (stupidperson2=='B' ||stupidperson2=='b')
+                                       {
+                                         cout<<"Correct you are right\n";
+                                         cout<<"You have won $20,000\n";
+                                         cout<<"Do you want to quit the game\n";
+                                         cout<<"press c or C to continue or any other key to exit\n";
+                                         char stupidperson3;cin>>stupidperson3;
+                                         if(stupidperson3=='c' ||stupidperson3=='C'){
+                                          cout<<"You want to continue the game\n";
+                                          cout<<"Alright then\n";
+                                          cout<<"Level 4\n";
+                                          cout<<"You have no lifeline left\n";
+                                          cout<<"please play wisely\n";
+                                          cout<<"Who was the famous playwright known for works like 'Romeo and Juliet' and 'Hamlet'?\nA. William Wordsworth\nB. William Shakespeare\nC. Jane Austen\nD. Charles Dickens\n";
+                                          char stupidperson4;cin>>stupidperson4;
+                                          if(stupidperson4=='B' ||stupidperson1=='b'){                                             
+                                             cout<<"Correct you are right\n";
+                                             cout<<"You have won $50,000\n";
+                                             cout<<"Do you want to quit the game\n";
+                                             cout<<"press c or C to continue or any other key to exit\n";
+                                             char stupidperson5;cin>>stupidperson5;
+                                             if(stupidperson5=='C' ||stupidperson5=='c'){
+                                                cout<<"You want to continue the game\n";
+                                                cout<<"Alright then\n";
+                                                cout<<"Level 5\n";
+                                                cout<<"You have no lifeline left\n";
+                                                cout<<"please play wisely\n";
+                                                cout<<"What does HTML stand for in web development?\nA. HyperText Markup Language\nB. High-Level Text Manipulation\nC. Hyperlink and Text Management Language\nD. Human Touch Manipulation Language\n";
+                                                char stupidperson6;cin>>stupidperson6;
+                                                if(stupidperson6=='A'||stupidperson6=='a'){
+                                                   cout<<"Correct you are right\n";
+                                                   cout<<"You have won $100,000\n";
+                                                   cout<<"Do you want to quit the game\n";
+                                                   cout<<"press c or C to continue or any other key to exit\n";
+                                                   char stupidperson7;cin>>stupidperson7;
+                                                   if (stupidperson7=='c' ||stupidperson1=='C')
+                                                   {
+                                                      cout<<"You want to continue the game\n";
+                                                      cout<<"Alright then\n";
+                                                      cout<<"Level 6\n";
+                                                      cout<<"You have no lifeline left\n";
+                                                      cout<<"please play wisely\n";
+                                                      cout<<"Who was the first Prime Minister of India?\nA. Jawaharlal Nehru\nB. Indira Gandhi\nC. Rajiv Gandhi\nD. Narendra Modi\n";
+                                                      char stupidperson8;cin>>stupidperson8;
+                                                      if(stupidperson8=='A'||stupidperson8=='a'){
+                                                         cout<<"Correct you are right\n";
+                                                         cout<<"You have won $500,000\n";
+                                                         cout<<"Do you want to quit the game\n";
+                                                         cout<<"press c or C to continue or any other key to exit\n";
+                                                         char stupidperson9;cin>>stupidperson9;
+                                                         if(stupidperson9=='c' ||stupidperson9=='C'){
+                                                            cout<<"You want to continue the game\n";
+                                                            cout<<"Alright then\n";
+                                                            cout<<"Level 7\n";
+                                                            cout<<"and the final level\n";
+                                                            cout<<"You have no lifeline left\n";
+                                                            cout<<"please play wisely\n";
+                                                            cout<<"Which continent is known as the 'Land Down Under'?\nA. Africa\nB. Europe\nC. Australia\nD. South America\n";
+                                                            char stupidperson10;cin>>stupidperson10;
+                                                            if (stupidperson10=='c' ||stupidperson10=='C')
+                                                            {
+                                                               cout<<"Correct you are right\n";
+                                                               cout<<"You have won $1,000,000\n";
+                                                               cout<<"See you in the next game\n";
+                                                               cout<<"You have successfully completed the game\n";
+                                                               return 0;
+                                                            }else{
+                                                               cout<<"Oooo the correct option was option c Australia\n";
+                                                               cout<<"Better luck next time\n";
+                                                               cout<<"Meet you soon in the next game\n";
+                                                               return 0;
+                                                            }
+                                                            
+                                                         }
 
+                                                      }else{
+                                                         cout<<"You are  wrong the correct option was A) Jawaharlal Nehru\n";
+                                                         cout<<"Better luck next time\n";
+                                                         cout<<"Exiting the game\n";
+                                                         return 0;
+                                                      }
+
+                                                     
+                                                   }else{
+                                                      cout<<"So As you have wished\n";
+                                                      cout<<"See you next time in the next game\n";
+                                                      cout<<"Exiting the game\n";
+                                                      return 0;
+                                                   }
+                                                   
+
+
+                                                }else{
+                                                   cout<<"You are  wrong the correct option was A) Hyper Text Markup language\n";
+                                                   cout<<"Better luck next time\n";
+                                                   cout<<"Exiting the game\n";
+                                                   return 0;
+                                                }
+
+
+                                             }else{
+                                                 cout<<"So As you have wished\n";
+                                                cout<<"See you next time in the next game\n";
+                                                cout<<"Exiting the game\n";
+                                                return 0;
+                                             }
+
+                                          }else{
+                                             cout<<"You are  wrong the correct option was b) william Shakespeare\n";
+                                             cout<<"Better luck next time\n";
+                                             cout<<"Exiting the game\n";
+                                             return 0;
+                                          }
+
+                                         }else{
+                                             cout<<"So As you have wished\n";
+                                             cout<<"See you next time in the next game\n";
+                                             cout<<"Exiting the game\n";
+                                             return 0;
+                                         }
+
+                                       }
+                                       
+
+                                    }else{
+                                       cout<<"So As you have wished\n";
+                                       cout<<"See you next time in the next game\n";
+                                       cout<<"Exiting the game\n";
+                                       return 0;
+                                    }
+                                 }
+                                 
+                              }
+                              
+
+                           }else{
+                              cout<<"According to your friend A is the answer\n";
+                              char anspyf2;cin>>anspyf2;
+                              cout<<"Press key A or a as your friend said\n";
+                              cout<<"else any other answer you may want to give other than your friend one\n";
+                              if(anspyf2=='A'||anspyf2=='a'){
+                                 cout<<"Thats absolutely correct answer\n";
+                                 cout<<"You have won this level worth $20,000\n";
+                                 cout<<"press Y or y to continue the game\nelse any other to exit\n";
+                                 char exit7;cin>>exit7;
+                                 if(exit7=='Y'||exit7=='y'){
+                                    cout<<"continuing the game as you have wished\n";
+                                    cout<<"Level 4\n";
+                                    cout<<"Here is the questions on your screen for $50,000\n";
+                                    cout<<"Which festival is celebrated with the flying of kites in India?\nA. Holi\nB. Diwali\nC. Makar Sankranti\nD. Navratri\n";
+                                    cout<<"press h or H for help\n";
+                                    //continuing the game
+
+
+
+
+                                 }else{
+                                    cout<<"As you have wished to quit the game\n";
+                                    cout<<"The total amount you have won is $20,000\n";
+                                    cout<<"See you later!\n";
+                                    cout<<"Exiting the game\n";
+                                    return 0;
+                                 }
+                              }
+
+                           }
                         }
                         
-
-
-
 
 
                      }else{
@@ -503,13 +727,7 @@ int main(){
                            return 0;
                      }
                      
-                     
-
-
-
-
-
-
+                  
                   }else if(ans12=='h' ||ans12=='H'){
                      cout<<"You need help Alright then";
                      cout<<"Choose\n1-> for 50:50\n2-> for phone your friend\n3->for question swap\n";
@@ -548,7 +766,10 @@ int main(){
                            {
                               cout<<"So,as you have wished \n continuing the game\n";
                               //continue code
+                              char 
 
+                           }else{
+                              cout<<"So,as you have wished exiting the game\n";
                            }
                            
                         }
@@ -560,14 +781,12 @@ int main(){
 
                         if(option5=='2'){
                         cout<<"According to your friend the correct options is option D";
+                        
                         //continue code 
                         }
                      }else{
                         cout<<"You have not choosen any correct code option";
                      }
-                     
-
-                     
                      
 
                   }else{
@@ -606,22 +825,7 @@ int main(){
 }
 
 
-
-
 /*
-
-Certainly! Here are 20 multiple-choice questions (MCQs) with four options each, covering technology, history, geography, biology, and India, along with the correct answers:
-
-Technology:
-Question 1:
-What does "HTML" stand for in web development?
-A. HyperText Markup Language
-B. High-Level Text Manipulation
-C. Hyperlink and Text Management Language
-D. Human Touch Manipulation Language
-Answer: A
-
-
 
 History:
 Question 3:
@@ -640,14 +844,7 @@ C. American Revolutionary War
 D. Vietnam War
 Answer: C
 
-Geography:
-Question 5:
-Which continent is known as the "Land Down Under"?
-A. Africa
-B. Europe
-C. Australia
-D. South America
-Answer: C
+
 
 Question 6:
 What is the capital city of Japan?
@@ -656,41 +853,6 @@ B. Seoul
 C. Tokyo
 D. Bangkok
 Answer: C
-
-Biology:
-Question 7:
-Answer: C
-
-
-India:
-Question 9:
-
-Answer: B
-
-Question 10:
-
-
-Technology:
-Question 11:
-
-Answer: A
-
-Question 12:
-Which of the following is an example of a social media platform?
-A. Microsoft Excel
-B. Instagram
-C. Adobe Photoshop
-D. Google Chrome
-Answer: B
-
-History:
-Question 13:
-Who was the famous playwright known for works like "Romeo and Juliet" and "Hamlet"?
-A. William Wordsworth
-B. William Shakespeare
-C. Jane Austen
-D. Charles Dickens
-Answer: B
 
 Question 14:
 In which century did the Industrial Revolution begin?
@@ -709,18 +871,7 @@ C. Southern Ocean
 D. Pacific Ocean
 Answer: D
 
-Question 16:
 
-Answer: C
-
-Biology:
-Question 17:
-What is the primary function of the respiratory system?
-A. Circulating blood
-B. Producing hormones
-C. Breathing and gas exchange
-D. Digesting food
-Answer: C
 
 Question 18:
 Which gas do plants primarily absorb during photosynthesis?
@@ -730,21 +881,6 @@ C. Nitrogen
 D. Hydrogen
 Answer: B
 
-India:
-Question 19:
-Who was the first Prime Minister of India?
-A. Jawaharlal Nehru
-B. Indira Gandhi
-C. Rajiv Gandhi
-D. Narendra Modi
-Answer: A
 
-Question 20:
-Which festival is celebrated with the flying of kites in India?
-A. Holi
-B. Diwali
-C. Makar Sankranti
-D. Navratri
-Answer: C
 
 */
