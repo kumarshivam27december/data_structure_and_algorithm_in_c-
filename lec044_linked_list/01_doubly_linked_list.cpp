@@ -76,6 +76,8 @@ void insertatpos(node* &head,node* &tail,int position,int data){
         temp=temp->next;
         cnt++;
     }
+
+    
     node* nodetoinsert = new node(data);
     nodetoinsert->next = temp->next;
     temp->next->prev = nodetoinsert;

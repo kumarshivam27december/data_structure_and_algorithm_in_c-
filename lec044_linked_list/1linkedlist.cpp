@@ -80,7 +80,7 @@ void deletionatpos(int position, node* &head, node* &tail) {
         node* temp = head;
         head = head->next;
         temp->next = NULL;
-        delete temp;
+        delete temp;  
     }
     else {
         node* prev = NULL;
