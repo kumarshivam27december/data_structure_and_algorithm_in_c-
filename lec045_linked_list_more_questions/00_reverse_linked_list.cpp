@@ -14,6 +14,33 @@ void insertathead(node* &head,int data){
     temp->next=head;
     head = temp;
 }
+// // node* reverse(node* &head){
+// //     //when it is empty or have just one element
+// //     if (head==NULL || head->next==NULL)
+// //     {
+// //         return head;
+// //     }
+
+// //     node* prev = NULL;
+// //     node* curr = head;
+// //     node* forward = NULL;
+
+// //     while (curr!=NULL)
+// //     {
+// //         forward = curr->next;
+// //         curr->next = prev;
+// //         prev = curr;
+// //         curr = forward;
+
+// //     }
+    
+// //     head = prev;
+// //     return head;
+// // }
+
+//reversiong linked List
+
+
 node* reverse(node* &head){
     //when it is empty or have just one element
     if (head==NULL || head->next==NULL)
@@ -21,22 +48,23 @@ node* reverse(node* &head){
         return head;
     }
 
-    node* prev = NULL;
-    node* curr = head;
-    node* forward = NULL;
+    node* prevptr = NULL;
+    node* currptr = head;
+    node* nextptr;
 
-    while (curr!=NULL)
-    {
-        forward = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = forward;
-
+    while(currptr != NULL){
+        nextptr = currptr->next;
+        currptr->next = prevptr;
+        prevptr = currptr;
+        currptr = nextptr; 
     }
-    
-    head = prev;
+
+    head = prevptr;
     return head;
 }
+
+
+
 void print(node* &head){
     node* temp = head;
     int cnt = 1;
@@ -67,3 +95,27 @@ int main(){
     print(head);
     return 0;
 }
+
+
+/*
+//reversiong linked List
+
+
+node* reversal(node* &head){
+    node* prevptr = NULL;
+    node* currptr = head;
+    node* nextptr;
+
+    while(currptr != NULL){
+        nextptr = currptr->next;
+        currptr->next = prevptr;
+        prevptr = currptr;
+        currptr = nextptr; 
+    }
+
+    head = prevptr;
+    return head;
+}
+
+
+*/

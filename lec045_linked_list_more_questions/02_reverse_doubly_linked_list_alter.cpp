@@ -47,7 +47,7 @@ Node* reverseList(Node* &head) {
     while (curr!=NULL)
     {
         Node* temp = curr->next;
-        curr->next = curr->prev;  //parallel
+        curr->next = curr->prev;  //parallel    
         curr->prev=temp;
         curr = curr->next;
     }
