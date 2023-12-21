@@ -38,7 +38,9 @@ void insertathead(node* &head,int data){
 // //     return head;
 // // }
 
-//reversiong linked List
+
+/*
+//reversing linked List alter
 
 
 node* reverse(node* &head){
@@ -62,7 +64,21 @@ node* reverse(node* &head){
     head = prevptr;
     return head;
 }
+*/
 
+
+
+node* recursivereverse(node* head) {
+    // Base case
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+
+    node* newhead = recursivereverse(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return newhead;
+}
 
 
 void print(node* &head){
@@ -91,31 +107,9 @@ int main(){
     cout<<"Before reversal "<<endl;
     print(head);
     cout<<"after reversal "<<endl;
-    reverse(head);
+    head = recursivereverse(head);
     print(head);
     return 0;
 }
 
 
-/*
-//reversiong linked List
-
-
-node* reversal(node* &head){
-    node* prevptr = NULL;
-    node* currptr = head;
-    node* nextptr;
-
-    while(currptr != NULL){
-        nextptr = currptr->next;
-        currptr->next = prevptr;
-        prevptr = currptr;
-        currptr = nextptr; 
-    }
-
-    head = prevptr;
-    return head;
-}
-
-
-*/

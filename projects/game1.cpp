@@ -286,6 +286,164 @@ int main(){
                   {
                      case 1:
                      cout<<"The incorrect options are \nRubles \nchinese dollar\n";
+                     cout<<"So whats is your answer again\n";
+                     char sans1;cin>>sans1;
+                     if (sans1=='D' ||sans1=='d')
+                     {
+                        cout<<"you are correct\n";
+                        cout<<"You have won this level- 2\n";
+                        cout<<"You have $5000\n";
+                        cout<<"Do you want to go further if yes type Y or y\n";
+                        cout<<"Else any other key\n";
+                        char sans2;cin>>sans2;
+                        if(sans2=='Y' || sans2=='y'){
+                           cout<<"As you have chosed to continue the game\n";
+                           cout<<"So welcome to the level 3 of this WONDERFUL game \n";
+                           cout<<"This question worth $20,000\n";
+                           cout<<"Which gas do plants primarily absorb during photosynthesis?\nA. Oxygen\nB. Carbon Dioxide\nC. Nitrogen\nD. Hydrogen\n";
+                           char sans3;cin>>sans3;
+                           if(sans3=='B' ||sans3=='b'){
+                              cout<<"Congrats you have won this level\n";
+                              cout<<"You have won $20,000\n";
+                              char sans4;cin>>sans4;
+                              cout<<"If you want to continue please press Y or y else any other key to quit the game\n";
+                              if (sans4=='Y' ||sans4=='y')
+                              {
+                                 cout<<"As you have chosed to continue the game\n";
+                                 cout<<"So welcome to the level 4 of this WONDERFUL game \n";
+                                 cout<<"This question worth $50,000\n";
+                                 cout<<"Which ocean is the largest by surface area?\nA. Atlantic Ocean\nB. Indian Ocean\nC. Southern Ocean\nD. Pacific Ocean\n";
+
+                                 char sans5;cin>>sans5;
+                                 if (sans5=='D' ||sans5=='d')
+                                 {
+                                    cout<<"Correct\n";
+                                    cout<<"You have won $50,000\n";
+                                    cout<<"You have completed Level 4 successfully\n";
+                                    cout<<"Do you want to go further if yes type Y or y\n";
+                                    cout<<"Else any other key\n";
+
+                                    char sans6;cin>>sans6;
+                                    if (sans6=='Y' ||sans6=='y')
+                                    {
+                                       cout<<"As you have opted for continuation\n";
+                                       cout<<"Welcome to level 5\n";
+                                       cout<<"This next question worth $100,000\n";
+                                       cout<<"Play with care\n";
+                                       cout<<"In which century did the Industrial Revolution begin?\nA. 17th\nB. 18th\nC. 19th\nD. 20th\n";
+                                       char sans7;cin>>sans7;
+                                       if (sans7 == 'B' ||sans7 == 'b')
+                                       {
+                                             cout<<"Correct\n";
+                                             cout<<"You have won $100,000\n";
+                                             cout<<"You have completed Level 5 successfully\n";
+                                             cout<<"Do you want to go further if yes type Y or y\n";
+                                             cout<<"Else any other key\n";
+                                             char sans8;cin>>sans8;
+                                             if (sans8 == 'Y' ||sans8=='y')
+                                             {
+                                                cout<<"As you have opted for continuation\n";
+                                                cout<<"Welcome to level 6\n";
+                                                cout<<"This next question worth $500,000\n";
+                                                cout<<"Play with care\n";
+                                                cout<<"Which war is often referred to as the 'War of Independence' in the United States?\nA. World War I\nB. American Civil War\nC. American Revolutionary War\nD. Vietnam War\n";
+                                                char sans9;cin>>sans9;
+                                                if (sans9=='C'||sans9=='c')
+                                                {
+                                                   cout<<"Correct\n";
+                                                   cout<<"You have won $500,000\n";
+                                                   cout<<"You have completed Level 6 successfully\n";
+                                                   cout<<"Do you want to go further if yes type Y or y\n";
+                                                   cout<<"Else any other key\n";
+                                                   char sans10;cin>>sans10;
+                                                   if (sans10=='Y' || sans10=='y')
+                                                   {
+                                                      cout<<"As you have opted for continuation\n";
+                                                      cout<<"Welcome to level 7 and the final level\n";
+                                                      cout<<"This next question worth $1,000,000\n";
+                                                      cout<<"Play with care\n";
+                                                      cout<<"Who was the famous queen of ancient Egypt known for her beauty and intelligence?\nA. Cleopatra\nB. Nefertiti\nC. Hatshepsut\nD. Isis";
+                                                      char sans11;cin>>sans11;
+                                                      if (sans11=='A' ||sans11=='a')
+                                                      {
+                                                         cout<<"Wooooooooooo ! you are correct\n";
+                                                         cout<<"Thats is an absolutely correct answer\n";
+                                                         cout<<"And you have won a million dollar\n";
+                                                         cout<<"Congrats you have nailed it\n";
+                                                         cout<<"Thanks for joining see you again\n";
+                                                         cout<<"Exiting the game";
+                                                         return 0;
+                                                      }else{
+                                                         cout<<"You missed it\n";
+                                                         cout<<"the correct answer was (A) Cleopatra\n";
+                                                         cout<<"Better luck next time\n";
+                                                         cout<<"Exiting the game\n";
+                                                         return 0;
+                                                      }
+                                                      
+                                                   }else{
+                                                   cout<<"As you have opted to quit the game\n";
+                                                   cout<<"The total amount you have won is $500,000\n";
+                                                   cout<<"you can take that with you\n";
+                                                   cout<<"Thanks for the your time in this game\n";
+                                                   cout<<"Exiting the game\n";
+                                                   return 0;
+                                                   }
+                                                   
+                                                }
+                                                
+
+                                             }else{
+                                                   cout<<"As you have opted to quit the game\n";
+                                                   cout<<"Thanks for the your time in this game\n";
+                                                   cout<<"Exiting the game\n";
+                                                   return 0;
+                                             }
+                                             
+                                       }else{
+                                          cout<<"the answer was (b) 18th century\n";
+                                          cout<<"better luck next time\n";
+                                          cout<<"Exiting the game\n";
+                                          return 0;
+                                       }
+                                       
+                                    }else{
+                                       cout<<"As you have opted to quit the game\n";
+                                       cout<<"Thanks for the your time in this game\n";
+                                       cout<<"Exiting the game\n";
+                                       return 0;
+                                    }
+                                    
+                                 }else{
+                                       cout<<"the answer was (D) Pacific Ocean\n";
+                                       cout<<"better luck next time\n";
+                                       cout<<"Exiting the game\n";
+                                       return 0;
+                                 }
+                                 
+                              }else{
+                                    cout<<"As you have opted to quit the game\n";
+                                    cout<<"Thanks for the your time in this game\n";
+                                    cout<<"Exiting the game\n";
+                                    return 0;
+                              }
+                              
+                           }else{
+                                 cout<<"the answer was (B) Carbon dioxide\n";
+                                 cout<<"better luck next time\n";
+                                 cout<<"Exiting the game\n";
+                                 return 0;
+                           }
+                        }else
+                        {
+                           cout<<"As you have opted to quit the game\n";
+                           cout<<"Thanks for the your time in this game\n";
+                           cout<<"Exiting the game\n";
+                           return 0;
+                        }
+                        
+                     }
+                     
                      ff++;
                      break;
 
@@ -829,19 +987,11 @@ int main(){
 
 History:
 Question 3:
-Who was the famous queen of ancient Egypt known for her beauty and intelligence?
-A. Cleopatra
-B. Nefertiti
-C. Hatshepsut
-D. Isis
+
 Answer: A
 
 Question 4:
-Which war is often referred to as the "War of Independence" in the United States?
-A. World War I
-B. American Civil War
-C. American Revolutionary War
-D. Vietnam War
+
 Answer: C
 
 
@@ -853,34 +1003,6 @@ B. Seoul
 C. Tokyo
 D. Bangkok
 Answer: C
-
-Question 14:
-In which century did the Industrial Revolution begin?
-A. 17th
-B. 18th
-C. 19th
-D. 20th
-Answer: B
-
-Geography:
-Question 15:
-Which ocean is the largest by surface area?
-A. Atlantic Ocean
-B. Indian Ocean
-C. Southern Ocean
-D. Pacific Ocean
-Answer: D
-
-
-
-Question 18:
-Which gas do plants primarily absorb during photosynthesis?
-A. Oxygen
-B. Carbon Dioxide
-C. Nitrogen
-D. Hydrogen
-Answer: B
-
 
 
 */
