@@ -1,11 +1,11 @@
-#include <iostream>
-#include <queue>
-#include <vector>
-#include <string>
-#include <string.h>
-#include <cstring>
-#include <stack>
-#include <math.h>
+// #include <iostream>
+// #include <queue>
+// #include <vector>
+// #include <string>
+// #include <string.h>
+// #include <cstring>
+// #include <stack>
+// #include <math.h>
 #include <bits/stdc++.h>
 #include <windows.h>
 #include <stdlib.h>
@@ -226,6 +226,13 @@ int main(){
                                                      cout<<"See you next time\n";
                                                      cout<<"completing the game\n";
                                                      return 0;
+                                                   }else{
+                                                      cout<<"It seems you were in hurry\n";
+                                                      cout<<"You are wrong\n";
+                                                      cout<<"The correct option was wrong\n";
+                                                      cout<<"The answer was Mitochondrion\n";
+                                                      cout<<"Better luck next time\n";
+                                                      return 0;
                                                    }
                                                    
                                                 }
@@ -924,7 +931,7 @@ int main(){
                            {
                               cout<<"So,as you have wished \n continuing the game\n";
                               //continue code
-                              char 
+                              // char 
 
                            }else{
                               cout<<"So,as you have wished exiting the game\n";
