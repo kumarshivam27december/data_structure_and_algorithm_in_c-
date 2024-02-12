@@ -7,7 +7,7 @@ int totalCandy(vector<int> &v){
     vector<int> k(l,1);
     int total = l;
 
-
+    //code here
     
     return total;
 }
