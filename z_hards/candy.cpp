@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int totalCandy(vector<int> &rating){
-    if(rating.size()==0) return 0;
+    // if(rating.size()==0) return 0;
     if(rating.size()==1) return 1;
     int l = rating.size();
     vector<int> candies(l,1);
