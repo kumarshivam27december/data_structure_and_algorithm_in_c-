@@ -1,4 +1,4 @@
-//sliding window
+//sliding window problem
 #include <bits/stdc++.h>
 using namespace std;
 int min_size_subarray_sum(vector<int>&nums,int target){
