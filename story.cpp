@@ -1,0 +1,6 @@
+/*
+
+once upon a time a small mouse lived in a quaint hole in the corner of a barn every day it scurried throughthe fields collecting crumbs one day it found a shiny coin its treasure filled with joy it danced under the moonlight dreaming of grand adventures ahead
+
+
+*/
