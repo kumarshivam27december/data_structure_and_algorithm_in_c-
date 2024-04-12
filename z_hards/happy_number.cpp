@@ -1,7 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 int numSquareSum(int n){
-    return n*n;
+    int squaresum = 0;
+    while(n){
+        int digit = n%10;
+        squaresum+=(digit*digit);
+        n/=10;
+    }
+    return squaresum;
 }
 bool checkhappiness(int n){
     set<int> st;
