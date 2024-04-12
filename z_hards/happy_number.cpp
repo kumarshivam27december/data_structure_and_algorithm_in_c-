@@ -1,7 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+int numSquareSum(int n){
+    return n*n;
+}
 bool checkhappiness(int n){
-    //
+    set<int> st;
+    while(1){
+        n =numSquareSum(n);
+        if(n==1) return true;
+        if(st.find(n)!=st.end()) return false;
+        st.insert(n); 
+    }
+
+    /*
+    //way 1
     if(n==1||n==7) return true;
     int sum = n;
     int x = n;
@@ -20,6 +32,9 @@ bool checkhappiness(int n){
     if(sum==7)
         return true;
     return false; 
+
+
+    */
     
 }
 int main()
