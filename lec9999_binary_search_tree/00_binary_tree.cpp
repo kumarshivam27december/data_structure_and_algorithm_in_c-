@@ -71,6 +71,9 @@ int sum(node* root) {
 	findsum(root, ans);
 	return ans;
 }
+void complete_traversal(node* root){
+	
+}
 int main() {
 #ifndef ONLINE_JUDGE
 	freopen("input1.txt", "r", stdin);
