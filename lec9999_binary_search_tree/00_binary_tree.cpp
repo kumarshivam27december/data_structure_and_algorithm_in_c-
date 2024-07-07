@@ -72,7 +72,7 @@ int sum(node* root) {
 	return ans;
 }
 void complete_traversal(node* root){
-	
+	// traverse complete tree at once and print their inorder preorder and postorder
 }
 int main() {
 #ifndef ONLINE_JUDGE
