@@ -1,81 +1,53 @@
 #include <iostream>
+#include <string>
 #include <vector>
-#include <unordered_map>
-#include <sstream>
 #include <algorithm>
+#include <cctype>
 
-// Function to split a string into words
-std::vector<std::string> split(const std::string &str) {
-    std::vector<std::string> words;
-    std::stringstream ss(str);
-    std::string word;
-    while (ss >> word) {
-        words.push_back(word);
-    }
-    return words;
+// Convert a string to lowercase for case-insensitive comparison
+std::string toLower(const std::string& str) {
+    std::string lowerStr = str;
+    std::transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
+    return lowerStr;
 }
 
-// Function to build an inverted index from a list of documents
-std::unordered_map<std::string, std::vector<int>> buildIndex(const std::vector<std::string> &documents) {
-    std::unordered_map<std::string, std::vector<int>> index;
+// Function to search for a query in a document and return whether it's found
+bool searchInDocument(const std::string& document, const std::string& query) {
+    std::string lowerDocument = toLower(document);
+    std::string lowerQuery = toLower(query);
     
-    for (int i = 0; i < documents.size(); ++i) {
-        std::vector<std::string> words = split(documents[i]);
-        for (const std::string &word : words) {
-            std::string lowerWord = word;
-            std::transform(lowerWord.begin(), lowerWord.end(), lowerWord.begin(), ::tolower);
-            index[lowerWord].push_back(i);
+    return lowerDocument.find(lowerQuery) != std::string::npos;
+}
+
+// Function to search for a query in all documents
+void search(const std::vector<std::string>& documents, const std::string& query) {
+    bool found = false;
+    for (size_t i = 0; i < documents.size(); ++i) {
+        if (searchInDocument(documents[i], query)) {
+            std::cout << "Document " << i + 1 << ": " << documents[i] << std::endl;
+            found = true;
         }
     }
-    
-    return index;
-}
 
-// Function to search for a word in the index
-std::vector<int> search(const std::unordered_map<std::string, std::vector<int>> &index, const std::string &query) {
-    std::string lowerQuery = query;
-    std::transform(lowerQuery.begin(), lowerQuery.end(), lowerQuery.begin(), ::tolower);
-    
-    auto it = index.find(lowerQuery);
-    if (it != index.end()) {
-        return it->second;
-    } else {
-        return {};
+    if (!found) {
+        std::cout << "No documents found matching the query: " << query << std::endl;
     }
 }
 
-// Main function
 int main() {
     // Sample documents
     std::vector<std::string> documents = {
-        "Hello World",
-        "The quick brown fox",
-        "Hello from the other side",
-        "World of programming",
-        "Quick brown fox jumps"
+        "The quick brown fox jumps over the lazy dog.",
+        "Search engines help us find information quickly.",
+        "C++ is a powerful programming language.",
+        "Artificial Intelligence is transforming technology."
     };
-    
-    // Build the index
-    auto index = buildIndex(documents);
-    
-    // Query to search for
+
     std::string query;
     std::cout << "Enter search query: ";
     std::getline(std::cin, query);
-    
-    // Perform search
-    std::vector<int> results = search(index, query);
-    
-    // Display results
-    if (!results.empty()) {
-        std::cout << "Found in documents: ";
-        for (int docId : results) {
-            std::cout << docId << " ";
-        }
-        std::cout << std::endl;
-    } else {
-        std::cout << "No documents found for query: " << query << std::endl;
-    }
-    
+
+    search(documents, query);
+
     return 0;
 }
